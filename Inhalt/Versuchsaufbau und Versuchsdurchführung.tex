@@ -6,15 +6,15 @@ Der Versuchsaufbau besteht aus einer Spannungsquelle, zwei Multimetern zur Spann
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\linewidth]{Bilder/Versuchsaufbau.png}
-    \caption{Versuchsaufbau}
+    \caption{Versuchsaufbau aktiver Zweipol}
     \label{fig:versuchsaufbau}
 \end{figure}
 
 Zuerst wird $R_a=0\,\Omega$ eingestellt, um den Kurzschlussstrom $I_k$ zu messen. Dann wird der Schiebewiderstand aus der Schaltung abgeklemmt. Dadurch wird die Leerlaufspannung $U_l$ gemessen.
 Es ergeben sich die Werte
 \begin{align*}
-    I_k & = 2,67\,A \\
-    U_l & = 8\,V
+    I_k & = 2,67\,A  \\
+    U_l & = 8\,V\, .
 \end{align*}
 
 \subsection{Strom-Spannungs-Kennlinie des Grundstromkreises}
@@ -40,12 +40,14 @@ Für verschiedene Widerstände $R_a$ werden nun die Spannung und der Strom gemes
             384              & 4,71         & 12,3     & 0,94     & 58         \\
             \hline
         \end{tabularx}
+        \caption{Messwerte und Berechnungen im aktiven Zweipol}
+        \label{tab:messwerteAktiverZweipol}
     \end{table}
 \end{center}
 
-Mit den Kenngrößen $U_l=8\,$V und $I_k=2,67\,$A des aktiven Zweipols lässt sich die maximale Leistung, die der aktive Zweipol abgeben kann, berechnen. Diese ist gegeben durch
+Mit den Kenngrößen $U_l=5,02\,$V und $I_k=208\,$mA des aktiven Zweipols lässt sich die maximale Leistung, die der aktive Zweipol abgeben kann, berechnen. Diese ist gegeben durch
 \begin{equation*}
-    P_{a,max} = U_l \cdot I_k = 1,04\,W
+    P_{a,max} = U_l \cdot I_k = 1,04\,W\, .
 \end{equation*}
 
 In den Diagrammen \ref{fig:stromSpannungsKennlinie} und \ref{fig:leistungWirkungsgrad} sind die Messwerte graphisch dargestellt. In Abbildung \ref{fig:stromSpannungsKennlinie} sind die normierten Kennlinien $\frac{U_a}{U_l}=f\left(\frac{R_a}{R_i}\right)$ und $\frac{I}{I_k}=f\left(\frac{R_a}{R_i}\right)$, in Abbildung \ref{fig:leistungWirkungsgrad} die nach der Maximalleistung normierte abgegebene Leistung $\frac{P_a}{P_{a,max}}=f\left(\frac{R_a}{R_i}\right)$ sowie der Wirkungsgrad $\eta=f\left(\frac{R_a}{R_i}\right)$ dargestellt.
@@ -84,13 +86,13 @@ Zuerst werden mit dem Multimeter die Widerstände der Widerstände $R_1$, $R_2$,
 \end{align*}
 sowie ein Ersatzinnenwiderstand $R_{i,ers}$ bei überbrückten Quellspannungen von
 \begin{align*}
-    R_{i,ers} & = 1055\,\Omega
+    R_{i,ers} & = 1055\,\Omega\, .
 \end{align*}
 
 Der berechnete Ersatzinnenwiderstand $R_{i,ers,berechnet}$ beträgt
 \begin{align*}
     R_{i,ers,berechnet} & = \left(R_1+R_2\right)\parallel{R_3+R_4}\,\Omega\,
-    = 1058\,\Omega
+    = 1058\,\Omega\, .
 \end{align*}
 
 \subsection{Quellspannungen}
