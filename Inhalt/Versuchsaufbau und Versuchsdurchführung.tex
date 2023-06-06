@@ -5,7 +5,7 @@
 Der Versuchsaufbau besteht aus einer Spannungsquelle, zwei Multimetern zur Spannungs- bzw. Strommessung, und einem Schiebewiderstand. Der Versuchsaufbau ist in Abbildung \ref{fig:versuchsaufbau} dargestellt.
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\linewidth]{Bilder/Versuchsaufbau.png}
+    \includegraphics[angle=-90,width=0.5\linewidth]{Bilder/Versuchsaufbau.jpg}
     \caption{Versuchsaufbau aktiver Zweipol}
     \label{fig:versuchsaufbau}
 \end{figure}
@@ -13,8 +13,8 @@ Der Versuchsaufbau besteht aus einer Spannungsquelle, zwei Multimetern zur Spann
 Zuerst wird $R_a=0\,\Omega$ eingestellt, um den Kurzschlussstrom $I_k$ zu messen. Dann wird der Schiebewiderstand aus der Schaltung abgeklemmt. Dadurch wird die Leerlaufspannung $U_l$ gemessen.
 Es ergeben sich die Werte
 \begin{align*}
-    I_k & = 2,67\,A  \\
-    U_l & = 8\,V\, .
+    I_k & = 208\,mA     \\
+    U_l & = 5,02\,V\, .
 \end{align*}
 
 \subsection{Strom-Spannungs-Kennlinie des Grundstromkreises}
@@ -23,7 +23,7 @@ Für verschiedene Widerstände $R_a$ werden nun die Spannung und der Strom gemes
 \begin{equation*}
     \label{eq:wirkungsgrad}
     \eta = \frac{R_a}{R_i+R_a}
-\end{equation*} mit $R_i = 3\,\Omega$ aus der Versuchsvorbereitung. Außerdem wird die abgegebene Leistung $P_a$ nach \eqref{eq:abgegebeneLeistungAllgemein} berechnet und in die Tabelle eingetragen.
+\end{equation*} mit $R_i = \frac{U_l}{I_k} = 24,1\,\Omega$. Außerdem wird die abgegebene Leistung $P_a$ nach \eqref{eq:abgegebeneLeistungAllgemein} berechnet und in die Tabelle eingetragen.
 \begin{center}
     \begin{table}[ht]
         \begin{tabularx}{\linewidth}{|*{5}{X|}}
@@ -50,28 +50,37 @@ Mit den Kenngrößen $U_l=5,02\,$V und $I_k=208\,$mA des aktiven Zweipols lässt
     P_{a,max} = U_l \cdot I_k = 1,04\,W\, .
 \end{equation*}
 
-In den Diagrammen \ref{fig:stromSpannungsKennlinie} und \ref{fig:leistungWirkungsgrad} sind die Messwerte graphisch dargestellt. In Abbildung \ref{fig:stromSpannungsKennlinie} sind die normierten Kennlinien $\frac{U_a}{U_l}=f\left(\frac{R_a}{R_i}\right)$ und $\frac{I}{I_k}=f\left(\frac{R_a}{R_i}\right)$, in Abbildung \ref{fig:leistungWirkungsgrad} die nach der Maximalleistung normierte abgegebene Leistung $\frac{P_a}{P_{a,max}}=f\left(\frac{R_a}{R_i}\right)$ sowie der Wirkungsgrad $\eta=f\left(\frac{R_a}{R_i}\right)$ dargestellt.
+In den Diagrammen \ref{fig:stromSpannungsKennlinieNormal} und (\ref{fig:leistungWirkungsgradLogarithmisch}) sind die Strom- und Spannungskennlinien in Abhängigkeit vom Außenwiderstand zum einen mit linearer und zum anderen mit logarithmischer Abszissenachse dargestellt.
+
+In Abbildung \ref{fig:leistungWirkungsgrad} ist die nach der Maximalleistung normierte abgegebene Leistung $\frac{P_a}{P_{a,max}}=f\left(\frac{R_a}{R_i}\right)$ sowie der Wirkungsgrad $\eta=f\left(\frac{R_a}{R_i}\right)$ dargestellt.
 
 \begin{figure}[ht]
-    \begin{subfigure}[h]{0.4\linewidth}
-        \includegraphics[width=\linewidth]{example-image-a}
-        \caption{Strom und Spannung}
-        \label{fig:stromSpannungsKennlinie}
+    \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{Bilder/StromSpannungLinear.jpeg}
+        \caption{linear}
+        \label{fig:stromSpannungsKennlinieNormal}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[h]{0.4\linewidth}
-        \includegraphics[width=\linewidth]{example-image-b}
-        \caption{Leistung und Wirkungsgrad}
-        \label{fig:leistungWirkungsgrad}
+    \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{Bilder/StromSpannungLogarithmisch.jpeg}
+        \caption{logarithmisch}
+        \label{fig:leistungWirkungsgradLogarithmisch}
     \end{subfigure}
-    \caption{Darstellung in Abhängigkeit von $R_a$}
+    \caption{Strom und Spannung in Abhängigkeit von $R_a$}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Bilder/WiderstandLeistung.jpeg}
+    \caption{Leistung und Wirkungsgrad in Abhängigkeit von $R_a$}
+    \label{fig:leistungWirkungsgrad}
 \end{figure}
 
 \subsection{Analyse eines Netzwerkes}
 Der Versuchsaufbau entspricht dem in Abbildung \ref{fig:versuchsaufbauNetzwerk} zu sehenden Aufbau und besteht aus drei Spannungsquellen, vier Widerständen sowie einem Multimeter zur Spannungs-, Strom- und Widerstandsmessung.
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\linewidth]{Bilder/Versuchsaufbau.png}
+    \includegraphics[width=0.5\linewidth]{Bilder/Versuchsaufbau-Netzwerk.jpg}
     \caption{Versuchsaufbau}
     \label{fig:versuchsaufbauNetzwerk}
 \end{figure}
